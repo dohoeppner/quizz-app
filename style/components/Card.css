@@ -16,6 +16,7 @@
   background: rgba(187, 243, 187, 0.5);
   font-family: "Zen Kaku Gothic Antique";
   padding: 10px 20px;
+  border-radius: 10px;
 }
 
 .card p {
@@ -29,6 +30,7 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  background-color: ;
 }
 
 .card img {
