@@ -1,0 +1,23 @@
+.button {
+  text-align: center;
+}
+
+.button__control {
+  margin: auto;
+  background: rgba(187, 243, 187, 0.5);
+  font-family: "Zen Kaku Gothic Antique";
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+.button__control:hover,
+.button__control:focus {
+  background-color: rgba(187, 243, 187, 0.9);
+  outline: none;
+}

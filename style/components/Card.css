@@ -10,15 +10,6 @@
   font-weight: 700;
 }
 
-.card button {
-  display: flex;
-  margin: 0 auto;
-  background: rgba(187, 243, 187, 0.5);
-  font-family: "Zen Kaku Gothic Antique";
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
 .card p {
   display: flex;
   padding-left: 20px;
@@ -30,7 +21,6 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  background-color: ;
 }
 
 .card img {

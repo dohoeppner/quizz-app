@@ -1,0 +1,34 @@
+.profile img {
+  border: 3px solid black;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.profile .person {
+  display: flex;
+  background: red;
+  padding: 20px;
+}
+
+main {
+  background-color: chocolate;
+}
+
+.profile .skills {
+  background-color: coral;
+  padding: 20px;
+}
+
+.profile .tag-list {
+  margin-right: 5px;
+}
+
+.profile .profile__description {
+  background-color: cornflowerblue;
+  padding: 20px;
+}
+
+.profile .frame {
+  background-color: blue;
+}

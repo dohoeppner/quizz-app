@@ -1,7 +1,8 @@
 .tag {
   display: inline-block;
   border: 2px solid black;
-  margin: 20px;
+  border-radius: 10px;
+  margin: 10px;
   line-height: 120%;
   padding: 10px;
 }
