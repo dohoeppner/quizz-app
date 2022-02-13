@@ -1,9 +1,16 @@
 .card {
-  border: 2px solid black;
+  border: 2px solid rgba(184, 223, 216, 1);
+  background: #ffe194;
+  border-radius: 10px;
   padding-right: 20px;
   padding-left: 20px;
   font-family: "Zen Kaku Gothic Antique";
   position: relative;
+  margin-bottom: 20px;
+}
+
+.card:last-of-type {
+  margin-bottom: 0;
 }
 
 .card h1 {
@@ -12,8 +19,7 @@
 
 .card p {
   display: flex;
-  padding-left: 20px;
-  padding-right: 60px;
+  padding: 0 20px 0 5px;
   margin-bottom: 30px;
 }
 
@@ -27,5 +33,17 @@
   width: 40px;
   position: absolute;
   right: 20px;
-  top: -10px;
+  top: -5px;
+}
+
+.card .bookmark--active {
+  visibility: hidden;
+}
+
+.card.card--bookmarked .bookmark--inactive {
+  visibility: hidden;
+}
+
+.card.card--bookmarked .bookmark--active {
+  visibility: visible;
 }

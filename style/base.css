@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 100px 0;
+  background: #e8f6ef;
+}
+
+main {
+  padding: 0 24px;
+}
+
 h1,
 h2,
 h3 {

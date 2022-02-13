@@ -1,0 +1,51 @@
+.menu {
+  border-top: 1px solid rgb(92, 86, 86);
+  padding: 11px 24px 27px 24px;
+  background: #ffb319;
+}
+
+.menu--position {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.menu nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .menu__item {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-right: 32px;
+  position: relative;
+  opacity: 0.7;
+}
+
+.menu .menu__item:hover {
+  opacity: 1;
+}
+
+.menu .menu__item img {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 34px;
+}
+
+.menu .menu__item:last-child {
+  margin-right: 0px;
+}
+
+.menu .menu__item--active {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  opacity: 1;
+  pointer-events: none;
+}

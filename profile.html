@@ -9,31 +9,32 @@
   </head>
 
   <body>
-    <header>
-      <h1></h1>
+    <header class="header header--position">
+      <h1>Profile</h1>
     </header>
-    <main class="frame">
+    <main>
       <section class="profile">
         <div class="person">
           <img
             class="profile__picture"
-            src="https://img1.picmix.com/output/stamp/normal/2/2/6/4/284622_cc4c8.gif"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1h-HvILUllUyfyCY8h0_e0Gp2c4gyD9tkg&usqp=CAU"
           />
-          <h2 class="profile__name">Miss Sunshine</h2>
+          <h2 class="profile__name">Schlaubi Schlumpf</h2>
         </div>
-        <p class="profile__description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-          consequatur sed illo, error sit nisi, qui, quasi cum accusantium
-          recusandae sint officiis. Voluptatibus fugiat, eius animi numquam fuga
-          sequi saepe.
-        </p>
+        <div class="profile__description">
+          <p>
+            Geboren und aufgewachsen bin ich in Schlumpfhausen, wo ich auch
+            heute noch wohne. In meiner Freizeit sammle ich gern Zitate und
+            liebe es, Vorträge zu halten.
+          </p>
+        </div>
         <div class="skills">
-          <h3>Skills</h3>
-          <div class="tag-list">
-            <span class="tag">topic abc</span>
-            <span class="tag">topic def</span>
-            <span class="tag">topic ghi</span>
-            <span class="tag">topic jkl</span>
+          <h3>My skills</h3>
+          <div class="tagline">
+            <span class="tag">Literatur</span>
+            <span class="tag">Mathe</span>
+            <span class="tag">Natur</span>
+            <span class="tag">Geschichte</span>
           </div>
         </div>
       </section>
@@ -41,13 +42,21 @@
         <a href="#" class="button__control">Logout</a>
       </div>
     </main>
-    <footer>
-      <nav class="menu">
-        <a class="menu__item" href="#">Home</a>
-        <a class="menu__item" href="#">Bookmark</a>
-        <a class="menu__item" href="#">Create</a>
-        <a class="menu__item menu__item--active" href="#">Profile</a>
+    <div class="menu menu--position">
+      <nav>
+        <a class="menu__item" href="#"
+          ><img src="style/images/home.svg" alt="Home"
+        /></a>
+        <a class="menu__item" href="#"
+          ><img src="style/images/bookmark_inactive.svg" alt="Bookmark"
+        /></a>
+        <a class="menu__item" href="#"
+          ><img src="style/images/create.svg" alt="Create"
+        /></a>
+        <a class="menu__item menu__item--active" href="#"
+          ><img src="style/images/profile.svg" alt="Profile"
+        /></a>
       </nav>
-    </footer>
+    </div>
   </body>
 </html>

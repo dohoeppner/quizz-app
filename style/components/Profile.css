@@ -1,34 +1,18 @@
+.profile {
+  font-family: "Zen Kaku Gothic Antique";
+  padding-bottom: 40px;
+}
+
 .profile img {
-  border: 3px solid black;
+  border: 4px solid rgba(184, 223, 216, 1);
   border-radius: 50px;
   width: 100px;
   height: 100px;
+  margin-right: 24px;
 }
 
-.profile .person {
+.person {
   display: flex;
-  background: red;
-  padding: 20px;
-}
-
-main {
-  background-color: chocolate;
-}
-
-.profile .skills {
-  background-color: coral;
-  padding: 20px;
-}
-
-.profile .tag-list {
-  margin-right: 5px;
-}
-
-.profile .profile__description {
-  background-color: cornflowerblue;
-  padding: 20px;
-}
-
-.profile .frame {
-  background-color: blue;
+  align-items: center;
+  padding: 25px;
 }

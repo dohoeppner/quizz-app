@@ -1,8 +1,13 @@
 .tag {
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid rgba(184, 223, 216, 1);
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
   line-height: 120%;
   padding: 10px;
+  background: #ffe194;
+}
+
+.skills .tagline {
+  width: 100%;
 }
