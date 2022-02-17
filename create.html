@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+    <script src="script-create.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,10 +19,14 @@
           <textarea
             name="add-question"
             id="add-question"
+            data-js="newQuestion"
             placeholder="Create a new question..."
             rows="8"
-            maxlength="100"
+            maxlength="240"
           ></textarea>
+          <div data-js="counter">
+            Count:<span data-js="count-output">0</span>/240
+          </div>
           <label for="add-answer">Add the answer:</label>
           <textarea
             name="add-answer"

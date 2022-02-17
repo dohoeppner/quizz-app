@@ -1,10 +1,10 @@
 .card {
-  border: 2px solid rgba(184, 223, 216, 1);
+  border: 2px solid rgb(184 223 216 / 100%);
   background: #ffe194;
   border-radius: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  font-family: "Zen Kaku Gothic Antique";
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
   position: relative;
   margin-bottom: 20px;
 }
@@ -23,9 +23,15 @@
   margin-bottom: 30px;
 }
 
+.card .card__answer {
+  display: none;
+}
+
+.card .card__answer--visible {
+  display: block;
+}
+
 .card div {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
 
