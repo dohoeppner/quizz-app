@@ -42,14 +42,18 @@
   top: -5px;
 }
 
+.card img .active {
+  display: none;
+}
+
 .card .bookmark--active {
   visibility: hidden;
 }
 
-.card.card--bookmarked .bookmark--inactive {
+.card.card--bookmarked .bookmark--hidden {
   visibility: hidden;
 }
 
-.card.card--bookmarked .bookmark--active {
+.card.card--bookmarked .bookmark--visible {
   visibility: visible;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script src="js/js-components/script-bookmark.js" defer></script>
     <title>Quiz-App | Home</title>
   </head>
   <body>
@@ -13,17 +14,29 @@
       <h1>QUIZZz</h1>
     </header>
     <main>
-      <article class="card">
-        <img src="style/images/bookmark_active.svg" data-js="active-bookmark" />
+      <article class="card card--bookmarked" data-js="card">
+        <img
+          data-js="inactive-bookmark"
+          class="bookmark--visible"
+          src="style/images/bookmark_inactive.svg"
+        />
+        <img
+          src="style/images/bookmark_active.svg"
+          class="bookmark--hidden"
+          data-js="active-bookmark"
+        />
+
         <h1>QUESTION:</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit,
           temporibus atque optio ex obcaecati doloremque similique maxime?
         </p>
-        <div class="button" data-js="toggle-answer">
-          <a href="#" class="button__control">Show answer</a>
+        <div class="button">
+          <a href="#" class="button__control" data-js="toggle-answer"
+            >Show answer</a
+          >
         </div>
-        <div class="card__answer card__answer--visible">
+        <div class="card__answer" data-js="answer">
           <h2>ANSWER:</h2>
           <p>This is a pretty short answer to the question above.</p>
         </div>
@@ -37,8 +50,17 @@
         </div>
       </article>
 
-      <article class="card">
-        <img src="style/images/bookmark_active.svg" />
+      <article class="card card--bookmarked" data-js="card">
+        <img
+          data-js="inactive-bookmark"
+          class="bookmark--visible"
+          src="style/images/bookmark_inactive.svg"
+        />
+        <img
+          src="style/images/bookmark_active.svg"
+          class="bookmark--hidden"
+          data-js="active-bookmark"
+        />
         <h1>QUESTION:</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit,
@@ -46,6 +68,10 @@
         </p>
         <div class="button">
           <a href="#" class="button__control">Show answer</a>
+        </div>
+        <div class="card__answer" data-js="answer">
+          <h2>ANSWER:</h2>
+          <p>This is a pretty short answer to the question above.</p>
         </div>
         <div class="topics">
           <div class="tagline">
@@ -57,11 +83,16 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card card--bookmarked" data-js="card">
         <img
-          src="style/images/bookmark_inactive.svg"
           data-js="inactive-bookmark"
-          class="bookmark--inactive"
+          class="bookmark--visible"
+          src="style/images/bookmark_inactive.svg"
+        />
+        <img
+          src="style/images/bookmark_active.svg"
+          class="bookmark--hidden"
+          data-js="active-bookmark"
         />
         <h1>QUESTION:</h1>
         <p>
@@ -80,11 +111,16 @@
           </div>
         </div>
       </article>
-      <article class="card card--bookmarked">
-        <img class="bookmark--active" src="style/images/bookmark_active.svg" />
+      <article class="card card--bookmarked" data-js="card">
         <img
-          class="bookmark--inactive"
+          data-js="inactive-bookmark"
+          class="bookmark--visible"
           src="style/images/bookmark_inactive.svg"
+        />
+        <img
+          src="style/images/bookmark_active.svg"
+          class="bookmark--hidden"
+          data-js="active-bookmark"
         />
         <h1>QUESTION:</h1>
         <p>

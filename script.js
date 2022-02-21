@@ -1,13 +1,29 @@
-const answerButton = document.querySelector('[data-js="toggle-answer"]');
-const answer = document.querySelector('.card__answer');
+// grabbing all the cards
+const cards = document.querySelectorAll('[data-js="card"]');
 
-answerButton.addEventListener('click', () => {
-  answer.classList.toggle('card__answer--visible');
+// foreach card attach a function with current card in argument
+cards.forEach(currentCard => {
+  // grabbing the button inside each card
+  const button = currentCard.querySelector('.button__control');
+
+  // grabbing the answer inside each card
+  const answer = currentCard.querySelector('.card__answer');
+
+  // attach event listener on the button inside each card
+  button.addEventListener('click', event => {
+    event.preventDefault();
+
+    // toogle the class of the answer in the card
+    answer.classList.toggle('card__answer--visible');
+  });
 });
 
-const activeBookmark = document.querySelector('[data-js="active-bookmark"');
-const inactiveBookmark = document.querySelector('[data-js="inactive-bookmark"');
-
-activeBookmark.addEventListener('click', () => {
-  inactiveBookmark.classList.toggle(activeBookmark);
-});
+// garbbing all the button queryselectorall
+// grabbing all the answers queryselectorall
+/**
+ * allButtons.forEach((btn, index) => {
+ *  btn.addEventListener
+ *      => answers[index].classList.toggle
+ * })
+ *
+ */
